@@ -8,4 +8,4 @@ deploy:
   file: "descriptor.json"
   user: $BINTRAY_API_USER
   key: $BINTRAY_API_KEY
-  dry-run: true
+  dry-run: false
