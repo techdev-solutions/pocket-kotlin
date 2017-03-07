@@ -19,5 +19,9 @@
         "gpgSign": false
     },
 
+    "files":
+        [
+        {"includePattern": "build/libs/(.*)"}
+        ],
     "publish": true
 }
