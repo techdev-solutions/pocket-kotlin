@@ -21,7 +21,7 @@
 
     "files":
         [
-        {"includePattern": "build/bin/(.*\.jar)", "uploadPattern": "$1"}
+        {"includePattern": "build/libs/(.*\.jar)", "uploadPattern": "$1"}
         ],
     "publish": true
 }
