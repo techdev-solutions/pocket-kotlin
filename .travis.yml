@@ -3,3 +3,9 @@ jdk:
     - oraclejdk8
 before_install:
  - chmod +x gradlew
+deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: $BINTRAY-API-USER
+  key: $BINTRAY-API-Key
+  dry-run: true

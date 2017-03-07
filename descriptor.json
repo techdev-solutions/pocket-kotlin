@@ -1,0 +1,23 @@
+{
+    "package": {
+        "name": "de.techdev.pocket",
+        "repo": "maven",
+        "subject": "techdev-solutions",
+        "desc": "Kotlin bindings for the Pocket API",
+        "website_url": "https://techdev.de",
+        "issue_tracker_url": "https://github.com/techdev-solutions/pocket-kotlin/issues",
+        "vcs_url": "https://github.com/techdev-solutions/pocket-kotlin.git",
+        "licenses": ["Apache-2.0"],
+        "labels": ["kotlin", "pocket", "pocket-api"],
+        "public_download_numbers": false,
+        "public_stats": false,
+    },
+
+    "version": {
+        "name": "0.1.0",
+        "released": "2017-03-07",
+        "gpgSign": false
+    },
+
+    "publish": true
+}
