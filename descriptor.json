@@ -10,7 +10,7 @@
         "licenses": ["Apache-2.0"],
         "labels": ["kotlin", "pocket", "pocket-api"],
         "public_download_numbers": false,
-        "public_stats": false,
+        "public_stats": false
     },
 
     "version": {
