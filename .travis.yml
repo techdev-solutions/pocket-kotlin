@@ -6,6 +6,6 @@ before_install:
 deploy:
   provider: bintray
   file: "descriptor.json"
-  user: $BINTRAY-API-USER
-  key: $BINTRAY-API-Key
+  user: $BINTRAY_API_USER
+  key: $BINTRAY_API_Key
   dry-run: true
