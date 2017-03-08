@@ -1,6 +1,6 @@
 {
     "package": {
-        "name": "de.techdev.pocket",
+        "name": "pocket-kotlin",
         "repo": "maven",
         "subject": "techdev-solutions",
         "desc": "Kotlin bindings for the Pocket API",
@@ -15,13 +15,13 @@
 
     "version": {
         "name": "0.1.0",
-        "released": "2017-03-07",
+        "released": "2017-03-08",
         "gpgSign": false
     },
 
     "files":
         [
-        {"includePattern": "build/libs/(.*\.jar)", "uploadPattern": "$1"}
+        {"includePattern": "build/libs/(.*\.jar)", "uploadPattern": "de/techdev/pocket/$1"}
         ],
     "publish": true
 }
