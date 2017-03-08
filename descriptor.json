@@ -21,7 +21,7 @@
 
     "files":
         [
-        {"includePattern": "build/libs/(.*)", "uploadPattern": "de/techdev/pocket/pocket-kotlin/0.1.1/$1"}
+        {"includePattern": "build/libs/(.*)", "uploadPattern": "de/techdev/pocket-kotlin/0.1.1/$1"}
         ],
     "publish": true
 }
