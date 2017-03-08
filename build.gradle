@@ -1,5 +1,5 @@
 group 'de.techdev'
-version '0.1.0'
+version '0.1.1'
 
 buildscript {
     ext.kotlin_version = '1.1.0'
@@ -38,12 +38,21 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.java
+            pom.withXml {
+                asNode().dependencies.'*'.findAll() {
+                    it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { dep ->
+                        dep.name == it.artifactId.text()
+                    }
+                }.each() {
+                    it.scope*.value = 'compile'
+                }
+            }
         }
     }
 }
 
 model {
     tasks.generatePomFileForMavenPublication {
-        destination = file("$buildDir/libs/pocket-kotlin-0.1.0.xml")
+        destination = file("$buildDir/libs/pocket-kotlin-0.1.1.xml")
     }
 }
